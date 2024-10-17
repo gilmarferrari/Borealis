@@ -32,7 +32,8 @@ public static class SaveSys
         }
         else
         {
-            return null;
+            FileStream stream = new FileStream(savePath, FileMode.Create);
+            return new PlayerData();
         }
     }
 
